@@ -7,7 +7,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "e2e": "cypress run",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "serve:pwa": "vite build --mode pwa && vite preview --mode pwa"
   },
   "dependencies": {
     "@capacitor/app": "4.0.1",
@@ -37,6 +38,7 @@
     "jshint": "^2.13.5",
     "typescript": "^4.3.5",
     "vite": "^3.1.2",
+    "vite-plugin-pwa": "^0.12.7",
     "vitest": "^0.23.2",
     "vue-tsc": "^0.40.13"
   },
